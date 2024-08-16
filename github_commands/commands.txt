@@ -1,0 +1,33 @@
+
+Git & Github -
+Git is Version Control System which allows you to track version history of your files 
+ 
+#git is an example of VCS (Version Control System) & github is an example of DVCS (Distributed Version Control System)
+
+git init {initialize a git repository .git )
+git add (add file)
+git commit -m (to commit the changes)
+git log (to check details changes done)
+git log --oneline --pretty (to check details changes done)
+git log --oneline (to check details changes done)
+git restore (to undo changes)
+git rm --cached (to remove file from repository not from file system (staging to untracked))
+git config --global user.name "" (to change author name)
+git config --global user.email "" (to change author email addres)
+git checkout -b (to make new branch)
+git checkout <branch-name> (switch to branch)
+git status (to check status)
+git branch (to check current branch)
+git restore --source otherbranch /path (to restore data from one branch to another)
+git clone (it clone the whole repository)
+git remote -v (to check from clone repository github path)
+git pull (to get github changes to local for that  branch )
+git fetch (for get all github branches changes to local)
+git push (for share local changes to github)  #if push file not set then go to config file and edit
+git remote set-url --add origin <https://token key@remaining url>
+git remote set-url --delete origin <url>
+
+git clone vs git fork 
+
+git fork - A fork is a copy of a repository that allows you to make your own changes without impacting the original project. (because all changes done in own repository)
+git clone - When you clone a repository you are creating a local copy on your computer that you can sync with the remote on GitHub (it impact the original project)
