@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 this is feature fil for later use 
 
 by arpit
+=======
+under the work 
+>>>>>>> 56735997975e6027b289536ced54ebccd4a74ded
