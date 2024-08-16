@@ -26,6 +26,14 @@ git fetch (for get all github branches changes to local)
 git push (for share local changes to github)  #if push file not set then go to config file and edit
 git remote set-url --add origin <https://token key@remaining url>
 git remote set-url --delete origin <url>
+git revert <commit id> (for revert that particular commit and it maintain its version hitory)
+git reset <commit id> (for reset that particular commit and it doesn't maintain its version hisory)
+git merge <branch-name> (it merges both branches not maintain linear version history)
+git branch -D <branch-name> (it delete the branch)
+git pull origin <branch-name> rebase (it like merge but maintain a linear commit history)
+git stash (use for not commiting the pending work and not want to show to someone)
+git stash pop (to resume your pending work after stashing)
+git cherry-pick <commit-id> (it pick that perticular commit from branch and applying it to another) 
 
 git clone vs git fork 
 
