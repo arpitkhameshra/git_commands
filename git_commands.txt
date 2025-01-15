@@ -1,6 +1,6 @@
-
 Git & Github -
-Git is Version Control System which allows you to track version history of your files 
+
+Git, Global Information Tracker, is Version Control System tool which allows us to track version history of files. GitHub is web based platform which provides GUI interaction of Git.   
  
 #git is an example of VCS (Version Control System) & github is an example of DVCS (Distributed Version Control System)
 
