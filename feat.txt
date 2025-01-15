@@ -1,5 +1,3 @@
 this is new file
 
 added more functionality
-
-this is a gadbad commit 
