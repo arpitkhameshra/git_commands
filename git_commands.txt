@@ -17,6 +17,7 @@ git config --global user.email "" (Sets the global Git email address for commits
 git checkout -b (Creates a new branch and switches to it)
 git checkout <branch-name> (switch to branch)
 git status (Displays the current status of the repository)
+git show <commit-id> (Display the changes for that single commit details)
 git diff (diff of what is changed but not staged)
 git diff --staged (diff of what is staged but not yet commited)
 git config --global color.ui auto (command configures Git to automatically colorize the output in the terminal)
