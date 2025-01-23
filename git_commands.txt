@@ -38,6 +38,10 @@ git checkout <branch-name> (switch to branch)
 
 git status (Displays the current status of the repository)
 
+git branch -m <old-branch-name> <new-branch-name>  (rename a branch name)
+
+git branch -r (to see the remote branch list)
+
 git show <commit-id> (Display the changes for that single commit details)
 
 git diff (diff of what is changed but not staged)
@@ -75,6 +79,8 @@ git reset <commit id> (for reset that particular commit and it doesn't maintain 
 git merge <branch-name> (it merges both branches not maintain linear version history)
 
 git branch -D <branch-name> (it delete the branch)
+
+git push origin -d <branch-name> (to delete a remote branch)
 
 git pull origin <branch-name> rebase (it like merge but maintain a linear commit history)
 
