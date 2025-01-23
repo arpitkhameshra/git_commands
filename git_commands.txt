@@ -5,43 +5,89 @@ Git, Global Information Tracker, is Version Control System tool which allows us 
 #git is an example of VCS (Version Control System) & github is an example of DVCS (Distributed Version Control System)
 
 git init (Initializes a new Git repository in the current directory by creating a .git directory.)
+
 git add (Adds files or changes to the staging area for the next commit)
+
 git commit -m (Saves changes from the staging area to the repository with a message describing the changes.)
+
+git commit -a -m "your-message" (add modified/updated/edited files to the staging area and commit then at the same time)
+
+git commit --amend -m "new-commit-message" (edit an incorrect commit message in Git)
+
 git log (Displays the commit history in detail)
+
 git log --oneline --pretty (Shows the commit history in a simplified, readable format)
+
 git log --oneline (Shows each commit in a single-line format)
+
+git log --oneline -5 (to show recent 5 commit)
+
+git log --oneline --author"author_name" (to show by commit change by author-name)
+
 git restore (to undo changes/Reverts changes in the working directory)
+
 git rm --cached (to remove file from repository not from file system (staging to untracked))
+
 git config --global user.name "" (Sets the global Git username for commits)
+
 git config --global user.email "" (Sets the global Git email address for commits)
+
 git checkout -b (Creates a new branch and switches to it)
+
 git checkout <branch-name> (switch to branch)
+
 git status (Displays the current status of the repository)
+
 git show <commit-id> (Display the changes for that single commit details)
+
 git diff (diff of what is changed but not staged)
+
 git diff --staged (diff of what is staged but not yet commited)
+
 git config --global color.ui auto (command configures Git to automatically colorize the output in the terminal)
+
 git log <branchA>..<branchB> (show the commits on Branch A that are not in Branch B)
+
 git diff <branchA>..<branchB> (show the diff of what is in Branch B that is not in Branch A)
+
 git branch (Lists all branches and highlights the current branch)
+
 git restore --source otherbranch /path (Restores files or directories from another branch)
+
 git clone (Creates a local copy of a remote repository)
+
 git remote -v (Displays the remote repository URLs.)
+
 git pull (to get github changes to local for that  branch )
+
 git fetch (for get all github branches changes to local)
+
 git push (for share local changes to github)  #if push file not set then go to config file and edit
+
 git remote set-url --add origin <https://token key@remaining url>
+
 git remote set-url --delete origin <url>
+
 git revert <commit id> (for revert that particular commit and it maintain its version hitory)
+
 git reset <commit id> (for reset that particular commit and it doesn't maintain its version hisory)
+
 git merge <branch-name> (it merges both branches not maintain linear version history)
+
 git branch -D <branch-name> (it delete the branch)
+
 git pull origin <branch-name> rebase (it like merge but maintain a linear commit history)
+
 git stash (use for not commiting the pending work and not want to show to someone)
+
 git stash pop (to resume your pending work after stashing)
+
 git cherry-pick <commit-id> (it pick that perticular commit from branch and applying it to another) 
 
-git clone vs git fork 
 
-git fork - A fork is a copy of a repository that allows you to make your own changes without impacting the original project. (because all changes done in own repository)
-git clone - When you clone a repository you are creating a local copy on your computer that you can sync with the remote on GitHub (it impact the original project)
+
+
+#git clone vs git fork 
+
+1. git fork - A fork is a copy of a repository that allows you to make your own changes without impacting the original project. (because all changes done in own repository)
+2. git clone - When you clone a repository you are creating a local copy on your computer that you can sync with the remote on GitHub (it impact the original project)
