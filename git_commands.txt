@@ -76,7 +76,11 @@ git revert <commit id> (for revert that particular commit and it maintain its ve
 
 git reset <commit id> (for reset that particular commit and it doesn't maintain its version hisory)
 
-git merge <branch-name> (it merges both branches not maintain linear version history)
+git merge <branch-name> (it merges both branches with new merge commit but not maintain linear version history)
+
+git rebase <branch-name) (it reapplies the commit, no new commit created and it maintain linear version history)
+
+git merge --abort (to skip from merge conflict)
 
 git branch -D <branch-name> (it delete the branch)
 
