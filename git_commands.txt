@@ -2,7 +2,7 @@ Git & Github -
 
 Git, Global Information Tracker, is Version Control System tool which allows us to track version history of files. GitHub is web based platform which provides GUI interaction of Git.   
  
-#git is an example of VCS (Version Control System) & github is an example of DVCS (Distributed Version Control System)
+git is an example of VCS (Version Control System) & github is an example of DVCS (Distributed Version Control System)
 
 git init (Initializes a new Git repository in the current directory by creating a .git directory.)
 
@@ -100,4 +100,5 @@ git cherry-pick <commit-id> (it pick that perticular commit from branch and appl
 #git clone vs git fork 
 
 1. git fork - A fork is a copy of a repository that allows you to make your own changes without impacting the original project. (because all changes done in own repository)
+
 2. git clone - When you clone a repository you are creating a local copy on your computer that you can sync with the remote on GitHub (it impact the original project)

@@ -1,1 +1,6 @@
-This is the repository of git & github commands for learn and practice
+
+This repository is for understanding Git Concepts for DevOps
+
+Commands
+
+
