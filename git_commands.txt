@@ -40,9 +40,11 @@ git log --since=2.month (we can see last 2 month commit history)
 
 git log --since=2.year (we can see last 2 year commit history)
 
-git log --pretty=format:"%h -- %ae" (it will show commit id and email of author")
+git log --pretty=format:"%h -- %ae" (it will show commit id and email of author)
 
-git log --pretty=format:"%h -- %an" (it will show commit id and name of author"
+git log --pretty=format:"%h -- %an" (it will show commit id and name of author)
+
+git checkout -- file-name (it is used to discard changes in a specific file and restore it to the last committed version)
 
 git restore (to undo changes/Reverts changes in the working directory)
 
