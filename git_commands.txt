@@ -30,6 +30,10 @@ git log --stat (same as git log but with changes details)
 
 git log -p (it will shows commit history with details , what part has been removed from commit and what new added)
 
+git log --pretty=full
+
+git log --pretty=short
+
 git restore (to undo changes/Reverts changes in the working directory)
 
 git rm --cached (to remove file from repository not from file system (staging to untracked))
