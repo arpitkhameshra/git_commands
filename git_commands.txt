@@ -100,6 +100,7 @@ git rm <file-name> (this command is used to remove a file in git)
 
 git mv <old-file-name> <file-new-name> (for rename file using git)
 
+git log -p (it will shows commit history with details , what part has been removed from commit and what new added)
 
 #git clone vs git fork 
 
