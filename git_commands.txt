@@ -96,7 +96,7 @@ git stash pop (to resume your pending work after stashing)
 
 git cherry-pick <commit-id> (it pick that perticular commit from branch and applying it to another) 
 
-
+git rm <file-name> (this command is used to remove a file in git)
 
 
 #git clone vs git fork 
