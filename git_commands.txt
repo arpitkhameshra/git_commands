@@ -8,6 +8,8 @@ git init (Initializes a new Git repository in the current directory by creating 
 
 git add (Adds files or changes to the staging area for the next commit)
 
+git add --a (same work as git add .)
+
 git commit -m (Saves changes from the staging area to the repository with a message describing the changes.)
 
 git commit -a -m "your-message" (add modified/updated/edited files to the staging area and commit then at the same time)
