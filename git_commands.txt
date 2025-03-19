@@ -30,15 +30,19 @@ git log --stat (same as git log but with changes details)
 
 git log -p (it will shows commit history with details , what part has been removed from commit and what new added)
 
-git log --pretty=full
+git log --pretty=full (we can data in some additional info)
 
-git log --pretty=short
+git log --pretty=short (we can see data in shorter way)
 
-git log --since=2.day
+git log --since=2.day (we can see last 2 day commit history)
 
-git log --since=2.month
+git log --since=2.month (we can see last 2 month commit history)
 
-git log --since=2.year
+git log --since=2.year (we can see last 2 year commit history)
+
+git log --pretty=format:"%h -- %ae" (it will show commit id and email of author")
+
+git log --pretty=format:"%h -- %an" (it will show commit id and name of author"
 
 git restore (to undo changes/Reverts changes in the working directory)
 
