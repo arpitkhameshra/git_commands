@@ -98,6 +98,8 @@ git cherry-pick <commit-id> (it pick that perticular commit from branch and appl
 
 git rm <file-name> (this command is used to remove a file in git)
 
+git mv <old-file-name> <file-new-name> (for rename file using git)
+
 
 #git clone vs git fork 
 
