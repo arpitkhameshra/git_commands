@@ -44,11 +44,19 @@ git log --pretty=format:"%h -- %ae" (it will show commit id and email of author)
 
 git log --pretty=format:"%h -- %an" (it will show commit id and name of author)
 
-git checkout -- file-name (it is used to discard changes in a specific file and restore it to the last committed version)
+git checkout -- file-name (it is used like undo or to discard changes in a specific file and restore it to the last committed version)
+
+git checkout -f (simillar like "git checkout -- file-name" but in multiple cases at once - unmodifying file)
 
 git restore (to undo changes/Reverts changes in the working directory)
 
 git rm --cached (to remove file from repository not from file system (staging to untracked))
+
+git config --global alias.ci commit (use for unstaging)
+
+git config --global alias.last 'log -p -1' (it will show last commit)
+
+git config --global.unstage 'restore -- staged --' (for making alias (shortname) instead of long)
 
 git config --global user.name "" (Sets the global Git username for commits)
 
