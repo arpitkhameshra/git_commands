@@ -1,136 +1,81 @@
-Git & Github -
-
-Git, Global Information Tracker, is Version Control System tool which allows us to track version history of files. GitHub is web based platform which provides GUI interaction of Git.   
- 
-git is an example of VCS (Version Control System) & github is an example of DVCS (Distributed Version Control System)
-
-git init (Initializes a new Git repository in the current directory by creating a .git directory.)
-
-git add (Adds files or changes to the staging area for the next commit)
-
-git add --a (same work as git add .)
-
-git commit -m (Saves changes from the staging area to the repository with a message describing the changes.)
-
-git commit -a -m "your-message" (add modified/updated/edited files to the staging area and commit then at the same time)
-
-git commit --amend -m "new-commit-message" (edit an incorrect commit message in Git)
-
-git log (Displays the commit history in detail)
-
-git log --oneline --pretty (Shows the commit history in a simplified, readable format)
-
-git log --oneline (Shows each commit in a single-line format)
-
-git log --oneline -5 (to show recent 5 commit)
-
-git log --oneline --author"author_name" (to show by commit change by author-name)
-
-git log --stat (same as git log but with changes details)
-
-git log -p (it will shows commit history with details , what part has been removed from commit and what new added)
-
-git log --pretty=full (we can data in some additional info)
-
-git log --pretty=short (we can see data in shorter way)
-
-git log --since=2.day (we can see last 2 day commit history)
-
-git log --since=2.month (we can see last 2 month commit history)
-
-git log --since=2.year (we can see last 2 year commit history)
-
-git log --pretty=format:"%h -- %ae" (it will show commit id and email of author)
-
-git log --pretty=format:"%h -- %an" (it will show commit id and name of author)
-
-git checkout -- file-name (it is used like undo or to discard changes in a specific file and restore it to the last committed version)
-
-git checkout -f (simillar like "git checkout -- file-name" but in multiple cases at once - unmodifying file)
-
-git restore (to undo changes/Reverts changes in the working directory)
-
-git rm --cached (to remove file from repository not from file system (staging to untracked))
-
-git config --global alias.ci commit (use for unstaging)
-
-git config --global alias.last 'log -p -1' (it will show last commit)
-
-git config --global.unstage 'restore -- staged --' (for making alias (shortname) instead of long)
-
-git config --global user.name "" (Sets the global Git username for commits)
-
-git config --global user.email "" (Sets the global Git email address for commits)
-
-git checkout -b (Creates a new branch and switches to it)
-
-git checkout <branch-name> (switch to branch)
-
-git status (Displays the current status of the repository)
-
-git branch -m <old-branch-name> <new-branch-name>  (rename a branch name)
-
-git branch -r (to see the remote branch list)
-
-git show <commit-id> (Display the changes for that single commit details)
-
-git diff (diff of what is changed but not staged)
-
-git diff --staged (diff of what is staged but not yet commited)
-
-git config --global color.ui auto (command configures Git to automatically colorize the output in the terminal)
-
-git log <branchA>..<branchB> (show the commits on Branch A that are not in Branch B)
-
-git diff <branchA>..<branchB> (show the diff of what is in Branch B that is not in Branch A)
-
-git branch (Lists all branches and highlights the current branch)
-
-git restore --source otherbranch /path (Restores files or directories from another branch)
-
-git clone (Creates a local copy of a remote repository)
-
-git remote -v (Displays the remote repository URLs.)
-
-git pull (to get github changes to local for that  branch )
-
-git fetch (for get all github branches changes to local)
-
-git push (for share local changes to github)  #if push file not set then go to config file and edit
-
-git remote set-url --add origin <https://token key@remaining url>
-
-git remote set-url --delete origin <url>
-
-git revert <commit id> (for revert that particular commit and it maintain its version hitory)
-
-git reset <commit id> (for reset that particular commit and it doesn't maintain its version hisory)
-
-git merge <branch-name> (it merges both branches with new merge commit but not maintain linear version history)
-
-git rebase <branch-name) (it reapplies the commit, no new commit created and it maintain linear version history)
-
-git merge --abort (to skip from merge conflict)
-
-git branch -D <branch-name> (it delete the branch)
-
-git push origin -d <branch-name> (to delete a remote branch)
-
-git pull origin <branch-name> rebase (it like merge but maintain a linear commit history)
-
-git stash (use for not commiting the pending work and not want to show to someone)
-
-git stash pop (to resume your pending work after stashing)
-
-git cherry-pick <commit-id> (it pick that perticular commit from branch and applying it to another) 
-
-git rm <file-name> (this command is used to remove a file in git)
-
-git mv <old-file-name> <file-new-name> (for rename file using git)
-
-
-#git clone vs git fork 
-
-1. git fork - A fork is a copy of a repository that allows you to make your own changes without impacting the original project. (because all changes done in own repository)
-
-2. git clone - When you clone a repository you are creating a local copy on your computer that you can sync with the remote on GitHub (it impact the original project)
+# Git & GitHub
+
+Git, Global Information Tracker, is a Version Control System tool that allows us to track the version history of files. GitHub is a web-based platform that provides a GUI for interacting with Git.
+
+**Git** is an example of a VCS (Version Control System) & **GitHub** is an example of a DVCS (Distributed Version Control System).
+
+## Basic Commands
+
+- `git init`: Initializes a new Git repository in the current directory by creating a `.git` directory.
+- `git add <file>`: Adds files or changes to the staging area for the next commit.
+- `git add --a`: Performs the same work as `git add .`.
+- `git commit -m "message"`: Saves changes from the staging area to the repository with a message describing the changes.
+- `git commit -a -m "message"`: Adds modified/updated/edited files to the staging area and commits them at the same time.
+- `git commit --amend -m "new-message"`: Edits an incorrect commit message in Git.
+- `git log`: Displays the commit history in detail.
+- `git log --oneline --pretty`: Shows the commit history in a simplified, readable format.
+- `git log --oneline`: Shows each commit in a single-line format.
+- `git log --oneline -5`: Shows the recent 5 commits.
+- `git log --oneline --author="author_name"`: Shows commits by a specific author.
+- `git log --stat`: Shows commit history with change details.
+- `git log -p`: Displays commit history with details on what parts were removed and added.
+- `git log --pretty=full`: Shows commit history with additional info.
+- `git log --pretty=short`: Shows commit history in a shorter format.
+- `git log --since=2.day`: Shows commit history for the last 2 days.
+- `git log --since=2.month`: Shows commit history for the last 2 months.
+- `git log --since=2.year`: Shows commit history for the last 2 years.
+- `git log --pretty=format:"%h -- %ae"`: Shows commit ID and author's email.
+- `git log --pretty=format:"%h -- %an"`: Shows commit ID and author's name.
+
+## File and Branch Management
+
+- `git checkout -- <file>`: Discards changes in a specific file and restores it to the last committed version.
+- `git checkout -f`: Discards changes in multiple files at once.
+- `git restore`: Reverts changes in the working directory.
+- `git rm --cached <file>`: Removes a file from the repository but not from the file system (staging to untracked).
+- `git config --global alias.ci commit`: Sets an alias for the commit command.
+- `git config --global alias.last 'log -p -1'`: Sets an alias to show the last commit.
+- `git config --global.unstage 'restore -- staged --'`: Sets an alias for unstaging.
+- `git config --global user.name "name"`: Sets the global Git username for commits.
+- `git config --global user.email "email"`: Sets the global Git email address for commits.
+- `git checkout -b <branch-name>`: Creates a new branch and switches to it.
+- `git checkout <branch-name>`: Switches to a specific branch.
+- `git status`: Displays the current status of the repository.
+- `git branch -m <old-name> <new-name>`: Renames a branch.
+- `git branch -r`: Lists remote branches.
+- `git show <commit-id>`: Displays the changes for a specific commit.
+- `git diff`: Shows the differences between the working directory and the staging area.
+- `git diff --staged`: Shows the differences between the staging area and the last commit.
+- `git config --global color.ui auto`: Configures Git to automatically colorize the output in the terminal.
+- `git log <branchA>..<branchB>`: Shows the commits on Branch A that are not in Branch B.
+- `git diff <branchA>..<branchB>`: Shows the differences between Branch A and Branch B.
+- `git branch`: Lists all branches and highlights the current branch.
+- `git restore --source <branch> /path`: Restores files or directories from another branch.
+
+## Remote Repository Management
+
+- `git clone <repo-url>`: Creates a local copy of a remote repository.
+- `git remote -v`: Displays the remote repository URLs.
+- `git pull`: Updates the local branch with changes from the remote branch.
+- `git fetch`: Fetches changes from all remote branches to the local repository.
+- `git push`: Pushes local changes to the remote repository.
+- `git remote set-url --add origin <url>`: Adds a new URL to the remote repository.
+- `git remote set-url --delete origin <url>`: Removes a URL from the remote repository.
+- `git revert <commit-id>`: Reverts a specific commit and maintains its version history.
+- `git reset <commit-id>`: Resets to a specific commit and does not maintain its version history.
+- `git merge <branch-name>`: Merges branches with a new merge commit without maintaining a linear version history.
+- `git rebase <branch-name>`: Reapplies commits without creating a new commit and maintains a linear version history.
+- `git merge --abort`: Aborts a merge conflict.
+- `git branch -D <branch-name>`: Deletes a branch.
+- `git push origin -d <branch-name>`: Deletes a remote branch.
+- `git pull origin <branch-name> rebase`: Maintains a linear commit history while pulling changes.
+- `git stash`: Temporarily shelves changes without committing them.
+- `git stash pop`: Applies the stashed changes back to the working directory.
+- `git cherry-pick <commit-id>`: Applies changes from a specific commit to another branch.
+- `git rm <file>`: Removes a file from the repository.
+- `git mv <old-name> <new-name>`: Renames a file using Git.
+
+## Git Clone vs Git Fork
+
+1. **git fork**: A fork is a copy of a repository that allows you to make your own changes without impacting the original project (because all changes are done in your own repository).
+2. **git clone**: When you clone a repository, you are creating a local copy on your computer that you can sync with the remote on GitHub (it impacts the original project).
