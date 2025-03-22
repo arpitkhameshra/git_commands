@@ -43,6 +43,8 @@ Git, Global Information Tracker, is a Version Control System tool that allows us
 - `git status`: Displays the current status of the repository.
 - `git branch -m <old-name> <new-name>`: Renames a branch.
 - `git branch -r`: Lists remote branches.
+- `git branch --merged`: Lists merged branches.
+- `git branch --no-merged`: Lists unmerged branches.
 - `git branch -v`: Lists branch name,commis id,and commit message.
 - `git show <commit-id>`: Displays the changes for a specific commit.
 - `git diff`: Shows the differences between the working directory and the staging area.
